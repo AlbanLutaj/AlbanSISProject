@@ -4,7 +4,7 @@ public class Constants {
 
 	public static final String CONFIGURATION_FILEPATH = System.getProperty("user.dir") + "/src/test/resources/configs/configuration.properties";
 
-	public static final String REPORT_FILEPATH = System.getProperty("user.dir") + "/target/html-report/HRMS.html";
+	//public static final String REPORT_FILEPATH = System.getProperty("user.dir") + "/target/html-report/HRMS.html";
 
 	public static final String SCREENSHOT_FILEPATH = System.getProperty("user.dir") + "/screenshots/";
 	
