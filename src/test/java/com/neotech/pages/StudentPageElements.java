@@ -22,6 +22,9 @@ public class StudentPageElements {
 	@FindBy(id="AutoCompleteStudentName_tStudentName")
 	public WebElement searchText;
 	
+	@FindBy(id="students_students")
+	public WebElement clickStudent;
+	
 	@FindBy(id="bStatusChange")
 	public WebElement clickEnroll;
 	
@@ -33,8 +36,10 @@ public class StudentPageElements {
 	
 	@FindBy(xpath="//div[@id='divUnenroll']")
 	public WebElement getWindowHandle;
-
 	
+	@FindBy(xpath="//a[text()='Parental']")
+	public WebElement clickParental;
+
 	public StudentPageElements()
 	{
 	   PageFactory.initElements(BaseClass.driver, this);	

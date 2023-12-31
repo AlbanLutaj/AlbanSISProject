@@ -26,7 +26,7 @@ public class AddNewStudentSteps extends CommonMethods {
 		wait(1);
 		sendText(addNew.firstName,"Lutaj");
 		wait(1);
-		sendText(addNew.middleName,"Ronaldo");
+		sendText(addNew.middleName,"Inter");
 		wait(1);
 		sendText(addNew.suffix,"mr");
 		wait(1);
@@ -47,11 +47,17 @@ public class AddNewStudentSteps extends CommonMethods {
 		wait(1);
 		sendText(addNew.label,"100");
 		wait(1);
+		jsClick(addNew.clicktochange);
+		waitForClickability(addNew.clicktochange);
+		switchToChildWindow();
+		String filePath= System.getProperty("user.dir") + "/Downloads/alban.png";
+		sendText(addNew.fileUpload,filePath);
+		click(addNew.upload);
+		acceptAlert();
+	    switchToChildWindow();
 		click(addNew.submitButton);
-		wait(2);
 		
-	
-
+		
 		
 	}
 

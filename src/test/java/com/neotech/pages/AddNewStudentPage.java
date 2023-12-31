@@ -78,7 +78,7 @@ public class AddNewStudentPage {
 	@FindBy(xpath="//input[@id='bSubmit']")
 	public WebElement submitButton;
 	
-	@FindBy(xpath="//a[@id='photoChange']")
+	@FindBy(xpath="//*[@id='photoChange']")
     public WebElement clicktochange;
 	
 	@FindBy(xpath="//input[@id='fileUpload']")

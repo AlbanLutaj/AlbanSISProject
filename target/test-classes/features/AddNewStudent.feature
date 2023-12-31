@@ -26,3 +26,11 @@ Feature: Add New Student
     Then I fil up the primary parent form and save it
     And I click add secondary Parent
     And I fill up the secondary parent form and save it
+
+  @addNewTeacher
+  Scenario: Add New Teacher
+    When I logged in
+    And I click to Staff/Faculty
+    When I click Add New
+    And I select Job Position annd Access Level
+    Then I fill up the form

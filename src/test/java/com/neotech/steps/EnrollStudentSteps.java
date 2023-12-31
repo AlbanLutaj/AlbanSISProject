@@ -19,14 +19,19 @@ public class EnrollStudentSteps extends CommonMethods {
 
 	
 	   
-	   selectDropdown(student.statusDropdown, "New");
-	   wait(1);
-	   sendText(student.searchText,"Alban Lutaj");
+	   selectDropdown(student.statusDropdown, "Enrolled");
 	   wait(1);
 	   
-	   WebElement el = student.searchText;
-	   el.sendKeys(Keys.ENTER);
+	   selectDropdown(student.clickStudent, "Alban Lutaj");
+	   wait(1);   
 	   
+	   /*sendText(student.searchText,"Alban Lutaj");
+	   wait(2);
+	   //WebElement el = student.searchText;
+	   //el.sendKeys(Keys.ENTER); 
+	   jsClick(student.clickSearch);
+	   //waitForClickability(student.clickSearch);
+	   wait(1);*/
 	   
 	}
 	
@@ -48,7 +53,7 @@ public class EnrollStudentSteps extends CommonMethods {
 	   for(WebElement el : list) 
 	   {
 		   String text = el.getText().trim();
-		   if(text.contains("Alban Lutaj")) 
+		   if(text.contains("Alban Inter Lutaj")) 
 		   {
 			   Assert.assertTrue(true);
 		   }
